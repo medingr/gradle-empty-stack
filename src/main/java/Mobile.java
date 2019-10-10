@@ -29,18 +29,7 @@ public class Mobile {
     }
 
     public static void main(String[] args) {
-        Mobile myPhone = new Mobile();
-        Iphone apple = new Iphone();
-        Android and = new Android();
-        myPhone.call("This is a message");
-        apple.call("Apple Message");
-        and.call("Android Message");
 
-        //show specs
-        myPhone.setBrand("Android");
-        myPhone.setColor("Red");
-        myPhone.setName("Gray");
-        myPhone.showSpecs();
 
     }
     public void call(String message) {

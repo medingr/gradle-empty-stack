@@ -1,10 +1,11 @@
 public class Android extends Mobile {
-    String name="AndriodName";
-    String color="blue";
-    String brand="Android";
+    private final int MAX_MESSAGE_LENGTH = 25;
     @Override
     public void call(String message) {
-        System.out.println("<Android>Message: " + message);
+        if (message.length() > MAX_MESSAGE_LENGTH){
+            System.out.println("<Android> Message cannot be sent");
+        } else System.out.println("<Android>Message: " + message);
     }
+
 
 }

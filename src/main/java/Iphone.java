@@ -1,7 +1,10 @@
 public class Iphone extends Mobile {
+    private final int MAX_MESSAGE_LENGTH = 40;
     @Override
     public void call(String message) {
-        System.out.println("<Iphone>Message: " + message);
+        if (message.length() > MAX_MESSAGE_LENGTH){
+            System.out.println("<Android> Message cannot be sent");
+        } else System.out.println("<Android>Message: " + message);
     }
 
 }
