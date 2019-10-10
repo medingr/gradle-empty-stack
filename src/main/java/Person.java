@@ -1,6 +1,7 @@
 public class Person   {
     private String name="";
     private Mobile myMobile;
+
     public String getName() {
         return name;
     }
@@ -9,16 +10,12 @@ public class Person   {
         this.name = name;
     }
 
-    public Mobile getMyMobile() {
-        return myMobile;
-    }
-
     public void setMyMobile(Mobile myMobile) {
         this.myMobile = myMobile;
     }
 
-    public static void main(String[] args) {
-
+    public void makeCall ( String message ) {
+        myMobile.call(message);
     }
 
 }

@@ -5,10 +5,10 @@ public class App {
     public static void main(String[] args) {
 
         Mobile myPhone = new Mobile();
-        Iphone apple = new Iphone();
+        Iphone graysIphone = new Iphone();
         Android graysAndroid = new Android();
         myPhone.call("This is a message");
-        apple.call("Apple Message");
+        graysIphone.call("Apple Message");
         graysAndroid.call("Android Message");
 
         //show specs
@@ -20,8 +20,12 @@ public class App {
         Person gray = new Person();
         gray.setName("Gray");
         gray.setMyMobile(graysAndroid);
-        gray.getMyMobile().call("Gray's Androidsfdgjskfksfdkdv");
-        gray.getMyMobile().call("Gray's Android");
+        gray.makeCall("this will be sent");
+        gray.makeCall("this is too long to send for Android");
+
+        gray.setMyMobile(graysIphone);
+        gray.makeCall("this will be sent");
+        gray.makeCall("this is too long to send for Iphone");
 
         IphoneRobot robot = new IphoneRobot();
         robot.setMobile(graysAndroid);
